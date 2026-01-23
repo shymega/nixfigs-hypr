@@ -13,8 +13,8 @@
 
     # Hyprland dependencies.
     hyprland = {
-      url = "github:hyprwm/Hyprland?ref=v0.53.1";
-      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:hyprwm/Hyprland?ref=v0.53.3";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins?ref=v0.52.0";
