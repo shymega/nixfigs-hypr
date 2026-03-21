@@ -13,21 +13,13 @@
 
     # Hyprland dependencies.
     hyprland = {
-      url = "github:hyprwm/Hyprland?rev=b940b0d2c197841b0f648598ee782dbaf9e0a89b";
+      url = "github:hyprwm/Hyprland?tag=v0.54.2";
     };
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins?ref=v0.53.0";
       inputs.hyprland.follows = "hyprland"; # Prevents version mismatch.
     };
-    split-monitor-workspaces = {
-      url = "github:Duckonaut/split-monitor-workspaces?rev=7f15447980ba2e6e3c57ca268ab556eb70ef562e";
-      inputs.hyprland.follows = "hyprland";
-    };
     snappy-switcher.url = "github:OpalAayan/snappy-switcher";
-    hy3 = {
-      url = "github:outfoxxed/hy3?ref=hl0.54.2";
-      inputs.hyprland.follows = "hyprland";
-    };
 
     # Hyprland theme (W2K)
     hypr-dotw2k = {
