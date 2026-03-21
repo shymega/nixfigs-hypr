@@ -13,7 +13,7 @@
 
     # Hyprland dependencies.
     hyprland = {
-      url = "github:hyprwm/hyprland?ref=v0.54.2";
+      url = "github:hyprwm/Hyprland?rev=b940b0d2c197841b0f648598ee782dbaf9e0a89b";
     };
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins?ref=v0.53.0";
