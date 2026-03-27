@@ -13,13 +13,16 @@
 
     # Hyprland dependencies.
     hyprland = {
-      url = "github:hyprwm/Hyprland?ref=v0.54.2";
+      url = "github:hyprwm/Hyprland?ref=v0.54.3";
     };
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins?ref=v0.53.0";
       inputs.hyprland.follows = "hyprland"; # Prevents version mismatch.
     };
-    snappy-switcher.url = "github:OpalAayan/snappy-switcher";
+    snappy-switcher = {
+      url = "github:OpalAayan/snappy-switcher";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # Hyprland theme (W2K)
     hypr-dotw2k = {
