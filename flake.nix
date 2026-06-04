@@ -38,7 +38,7 @@
     };
 
     # Flake utils
-    systems.url = "github:nix-systems/default";
+    systems.url = "github:nix-systems/triplet";
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
       inputs.nixpkgs-lib.follows = "nixpkgs";
