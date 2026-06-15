@@ -12,9 +12,8 @@
     };
 
     # Hyprland dependencies.
-    hyprland = {
-      url = "github:hyprwm/Hyprland?ref=v0.55.4";
-    };
+    hyprnix.url = "github:hyprwm/hyprnix";
+    hyprland.follows = "hyprnix/hyprland";
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins?ref=v0.55.0";
       inputs.hyprland.follows = "hyprland"; # Prevents version mismatch.
@@ -35,6 +34,7 @@
     # Hyprland theme (W2K)
     hypr-dotw2k = {
       url = "github:shymega/hypr-dotw2k";
+      inputs.hyprnix.follows = "hyprnix";
     };
 
     # Flake utils
