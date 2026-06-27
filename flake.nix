@@ -12,7 +12,11 @@
     };
 
     # Hyprland dependencies.
-    hyprnix.url = "github:hyprwm/hyprnix";
+    hyprnix = {
+      url = "github:hyprwm/hyprnix";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.systems.follows = "systems";
+    };
     hyprland.follows = "hyprnix/hyprland";
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins?ref=v0.55.0";
@@ -35,6 +39,11 @@
     hypr-dotw2k = {
       url = "github:shymega/hypr-dotw2k";
       inputs.hyprnix.follows = "hyprnix";
+    
+      inputs.home-manager.follows = "home-manager";
+      inputs.hyprland-plugins.follows = "hyprland-plugins";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.snappy-switcher.follows = "snappy-switcher";
     };
 
     # Flake utils
