@@ -3,7 +3,7 @@
 
   inputs = {
     # Core repos
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-26.05";
+    nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/*";
 
     # Home Environment deps
     home-manager = {
